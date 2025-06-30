@@ -17,15 +17,15 @@
 # Shuttle Notes:
 # small bounty hunting shuttle with 2 cells. Has expedition capability. This ship has a military IFF designation.
 - type: vessel
-  id: Taintor
+  id: Law
   parent: BaseVessel
-  name: SSB Taintor
-  description: The Taintor is a small bounty hunting ship with 2 cells. Has expedition capability. This ship has a military IFF designation.
+  name: SSB Law
+  description: The Law is a small bounty hunting ship with 2 cells. Has expedition capability. This ship has a military IFF designation.
   price: 52000
   category: Small
   group: Expedition
   access: Mercenary
-  shuttlePath: /Maps/_Mono/Shuttles/Expedition/taintor.yml
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/law.yml
   guidebookPage: Null
   class:
   - Pursuit
@@ -34,16 +34,16 @@
   - Uranium
 
 - type: gameMap
-  id: Taintor
-  mapName: 'SSB Taintor'
-  mapPath: /Maps/_Mono/Shuttles/Expedition/taintor.yml
+  id: Law
+  mapName: 'SSB Law'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/law.yml
   minPlayers: 0
   stations:
-    Taintor:
+    Law:
       stationProto: StandardFrontierExpeditionVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Taintor MIL{1}'
+          mapNameTemplate: 'Law MIL{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

@@ -204,7 +204,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Taintor
+      id: Law
 - proto: AirAlarm
   entities:
   - uid: 2
