@@ -1,0 +1,42 @@
+# Author Info
+# GitHub: marklyfied
+# Discord: adsadewr23_57639
+
+# Shuttle Notes:
+# small bounty hunting shuttle with 2 cells. Has expedition capability. This ship has a military IFF designation.
+- type: vessel
+  id: Taintor
+  parent: BaseVessel
+  name: SSB Taintor
+  description: The Taintor is a small bounty hunting ship with 2 cells. Has expedition capability. This ship has a military IFF designation.
+  price: 52000
+  category: Small
+  group: Expedition
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/taintor.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  - Expedition
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Taintor
+  mapName: 'SSB Taintor'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/taintor.yml
+  minPlayers: 0
+  stations:
+    Taintor:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Taintor MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
