@@ -1,0 +1,36 @@
+- type: vessel
+  id: Katyusha
+  parent: BaseVesselAntag
+  name: SSB Katyusha
+  description: A small fighter with 4 90mm heavy autocannons. Feels like a submarine.
+  price: 36140 # gadyuka but shittier and uglier 2
+  category: Small
+  group: Ussp
+  access: USSPKatyusha
+  shuttlePath: /Maps/_Mono/Shuttles/USSP/katyusha.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  engine:
+  - Uranium
+# save me from mapping hell pelase
+- type: gameMap
+  id: katyusha.yml
+  mapName: 'Katyusha'
+  mapPath: /Maps/_Mono/Shuttles/USSP/katyusha.yml
+  minPlayers: 0
+  stations:
+    Katyusha:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Katyusha USSP{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            USSPSergeant: [0, 0]
+            USSPCorporal: [0, 0]
+            USSPMedic: [0, 0]
+            USSPRifleman: [0, 0]
