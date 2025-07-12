@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2025 Greenwall-Exe
+# SPDX-FileCopyrightText: 2025 Redrover1760
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Author Info
+# GitHub: marklyfied
+# Discord: coolfied
+
+# Shuttle Notes: taxi taxi taxi taxi
+
+- type: vessel
+  id: Courier
+  parent: BaseVessel
+  name: BSB Courier
+  description: Tiny taxi with 4 seats and an FTL.
+  price: 30720 # +16500 base, +10k for ftl, +5k fee, + random numbers to make it seem calculated, + 1k because WHY NOT, -2k because its lowk ass
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Mono/Shuttles/courier.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Courier
+  mapName: 'BSB Courier'
+  mapPath: /Maps/_Mono/Shuttles/courier.yml
+  minPlayers: 0
+  stations:
+    Courier:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Courier CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
