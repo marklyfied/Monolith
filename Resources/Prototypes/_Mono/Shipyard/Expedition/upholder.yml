@@ -1,0 +1,41 @@
+# Author Info
+# GitHub: marklyfied
+# Discord: coolfied
+
+# Shuttle Notes:
+# its meant to feel like a submarine trust its so fun to play
+- type: vessel
+  id: Upholder
+  parent: BaseVessel
+  name: BSB Upholder
+  description: The BSB Upholder is a medium compact ship that makes you feel like you're in a submarine, deep under water. Agile. Features 4 40mm autocannons. Exped Capable.
+  price: 81000 # 2 hardsuits, ftl and special features like boarder protection + a little tax for guns and shit
+  category: Medium
+  group: Expedition
+  access: Mercenary
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/upholder.yml
+  guidebookPage: Null
+  class:
+  - Pursuit
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Upholder
+  mapName: 'BSB Upholder'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/upholder.yml
+  minPlayers: 0
+  stations:
+    flashpoint:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Upholder MIL{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
