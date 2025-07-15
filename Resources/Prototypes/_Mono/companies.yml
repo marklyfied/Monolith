@@ -137,6 +137,14 @@
   color: "#92a2a1"
   image: /Textures/_Mono/Companies/steel_hammer.png
 
+- type: company
+  id: blackhawkpmc
+  form: Protagonist
+  name: Blackhawk Military Contracting
+  description: blackhawkpmc-description
+  color: "#419e23"
+  image: /Textures/_Mono/Companies/BMC.png
+
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup
