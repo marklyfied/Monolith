@@ -175,3 +175,24 @@
         Caustic: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.60
+
+- type: entity
+  id: ClothingOuterCoatJacketCDM
+  parent: [ ClothingOuterStorageBase, RecyclableItemClothDurable]
+  name: civil defense militia blazer
+  description: A blazer designed for Civil Defense Militia members.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/cdm_blazer.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/cdm_blazer.rsi
+  - type: Armor # Adjusted from bounty hunter coat
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+

@@ -63,6 +63,7 @@
   - MercenaryClothingOuterArmorPunkRed # Punkish (Static visuals)
   - MercenaryClothingOuterArmorPunkRandomized # Punkish (Randomized visuals)
   - MercenaryClothingOuterArmorCaptainCarapace
+  - ClothingOuterCoatJacketCDM
   subgroups:
   - PilotOuterClothing
   - ContractorOuterClothing
