@@ -95,9 +95,9 @@ public sealed partial class ShuttleSystem
             return;
         }
 
-        // Clamp the speed between 0 and 60
+        // Clamp the speed between 0 and 100
         // TODO: Make this account for thruster upgrades
-        var maxSpeed = Math.Clamp(args.MaxSpeed, 0f, 60f);
+        var maxSpeed = Math.Clamp(args.MaxSpeed, 0f, 100f);
 
         // Don't do anything if the value didn't change
         if (Math.Abs(shuttleComponent.BaseMaxLinearVelocity - maxSpeed) < 0.01f)
