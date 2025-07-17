@@ -3,6 +3,8 @@
 // SPDX-FileCopyrightText: 2025 Ark
 // SPDX-FileCopyrightText: 2025 Dvir
 // SPDX-FileCopyrightText: 2025 Redrover1760
+// SPDX-FileCopyrightText: 2025 marklyfie4
+// SPDX-FileCopyrightText: 2025 significant harassment
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
