@@ -20,7 +20,6 @@
   guidebookPage: Null
   class:
   - Pirate
-  - Science
   engine:
   - Uranium
 
