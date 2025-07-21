@@ -219,7 +219,7 @@
   form: Antagonist
   name: Cerberus Surplus Provisionaries
   description: cerberus-surplus-provisions
-  color: "aa1010"
+  color: "#aa1010"
   image: /Textures/_Mono/Companies/CSP.png
   logins:
     - GoobieWoob
