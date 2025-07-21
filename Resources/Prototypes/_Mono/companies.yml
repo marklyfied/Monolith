@@ -214,7 +214,7 @@
   description: paycheck-bratva-description
   color: "#7a0303"
 
-  type: company
+- type: company
   id: cerberussurplusprovisions
   form: Antagonist
   name: Cerberus Surplus Provisionaries
@@ -226,6 +226,7 @@
     - Coolzman
     - Lumpy_the_Clown
     - coolfied
+
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup
